@@ -13,6 +13,8 @@ on:
      To:
        required: true
        type: string
+permissions:
+  contents: write
 jobs:
  rollback-or-echo:
   runs-on: ubuntu-latest
