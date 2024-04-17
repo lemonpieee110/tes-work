@@ -1,1 +1,2 @@
 starter
+up 1 prod
