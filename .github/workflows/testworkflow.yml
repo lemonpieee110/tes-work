@@ -20,7 +20,7 @@ jobs:
    - name: Checkout repository
      uses: actions/checkout@v4
      with:
-      token: inherit
+      token: ${{ secrets.WORKFLOW_TOKEN }}
       fetch-depth: 0
    - name: rollback
      if: ${{ inputs.MODE == 'rollback'}}
