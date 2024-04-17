@@ -29,6 +29,6 @@ jobs:
       git config user.emai lemonpie110@163.com
       git checkout dev/stg
       git reset --hard ${{inputs.To}}
-      git push origin env/stg --force
+      git push origin dev/stg --force
           
        
