@@ -17,16 +17,16 @@ jobs:
  rollback-or-echo:
   runs-on: ubuntu-latest
   steps:
-   -name: Checkout repository
-    uses: actions/checkout@v2
-    with:
-     token: inherit
-     fetch-depth: 0
-   -name: rollback
-    if: ${{ inputs.MODE == 'rollback'}}
-    run: |
-     git checkout env/stg
-     git reset --hard ${{inputs.To}}
-     git push origin env/stg --force
+   - name: Checkout repository
+     uses: actions/checkout@v2
+     with:
+      token: inherit
+      fetch-depth: 0
+   - name: rollback
+     if: ${{ inputs.MODE == 'rollback'}}
+     run: |
+      git checkout env/stg
+      git reset --hard ${{inputs.To}}
+      git push origin env/stg --force
           
        
