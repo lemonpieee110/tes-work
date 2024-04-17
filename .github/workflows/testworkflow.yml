@@ -25,6 +25,8 @@ jobs:
    - name: rollback
      if: ${{ inputs.MODE == 'rollback'}}
      run: |
+      git config user.name lemonpieee110
+      git config user.emai lemonpie110@163.com
       git checkout env/stg
       git reset --hard ${{inputs.To}}
       git push origin env/stg --force
