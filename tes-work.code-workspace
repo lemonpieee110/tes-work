@@ -20,6 +20,9 @@
 		},
 		{
 			"path": "../ts03"
+		},
+		{
+			"path": "../query"
 		}
 	],
 	"settings": {}
